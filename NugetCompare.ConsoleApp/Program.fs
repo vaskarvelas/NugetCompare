@@ -5,13 +5,13 @@ open System.IO // Import System.IO namespace for file operations
 let main args =
     let argv =
     #if DEBUG
-        [|"<FirstProjectPath>" ; "<SecondProjectPath>" ; "<OutputFileName>.csv"|]
+        [|"C:\\Users\\vkarvelas\\Repositories\\Integrated.Dias_develop" ; "C:\\Users\\vkarvelas\\Repositories\\Integrated.Dias" ; "./output"|]
     #else
         args
     #endif
     if argv.Length < 3 then
-        printfn "Usage: <application> <solutionDir1> <solutionDir2> <outputFolder>"
-        1 // Return a non-zero exit code to indicate error
+        printfn "Usage: <application-name> <solutionDir1> <solutionDir2> <outputFolder>"
+        1
     else
         try
             let solutionDir1 = argv.[0]
