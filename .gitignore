@@ -258,3 +258,32 @@ paket-files/
 MyProject_coverage.xml
 ScriptFSharp.ConsoleApp/Scripts/*.txt
 *output*
+
+# Ignore .cr and .vscode folders
+.cr/
+.vscode/
+
+# Other editor specific folders
+.idea/
+.vim/
+.sublime-project
+.sublime-workspace
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Ignore compiled files
+*.class
+*.pyc
+*.o
+*.out
